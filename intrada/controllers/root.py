@@ -1,7 +1,8 @@
 from pecan import expose, redirect
 from webob.exc import status_map
 from intrada.controllers import v1
+from intrada.controllers.api import api
 
 
 class RootController(object):
-    v1 = v1.VersionController()
+    api = api.ApiController()
