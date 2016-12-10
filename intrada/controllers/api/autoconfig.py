@@ -18,7 +18,7 @@ class AutoConfigController(rest.RestController):
     def post(self):
         # TODO: Create a new order, (optional) return some status data
         response.status = 201
-        return "I am debugging!"
+        return request.POST.get('username')
 
     @pecan.expose()
     def put(self):
