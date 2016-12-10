@@ -19,7 +19,7 @@ class AutoConfigController(rest.RestController):
         # TODO: Create a new order, (optional) return some status data
         response.status = 201
         body = request.body
-        print("body: %s", body)
+        print("body:" + body)
         return body
 
     @pecan.expose()
